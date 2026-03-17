@@ -23,15 +23,28 @@ function addBookToLibrary(title, author, pageCount, beenRead){
 }
 addBookToLibrary("The Lord of the Rings", "J. R. R. Tolkien", 1200, true);
 addBookToLibrary("Moby Dick", "Herman Mellville", 750, false);
-addBookToLibrary("Eragon", "Christopher Paolini", 800, true);
-addBookToLibrary("Sphere", "Michael Chrichton", 900, true);
+addBookToLibrary("Eragon", "Christopher Paolini", 544, true);
+addBookToLibrary("Sphere", "Michael Chrichton", 528, true);
 
 function displayBooks() {
     bookShelf.innerHTML = "";
+    const container = document.getElementById("bookShelf")
 
-    myLibrary.forEach((Book, index /* or just i */) => {
-        const card = '<div class="book-card" id="${book.id}'
+    myLibrary.forEach((book, i) => {
+        const bookCard = document.createElement("div");
+        bookCard.className = "book-card";
+        bookCard.setAttribute("data-index", index);
+        bookCard.id = book.id;
+
+        bookCard.innerHTML = `<div class="book-card">
+                                <h3>Index #: ${book.id}</h3>
+                                <h1>${book.title}</h1>
+                                <h2>By ${book.author}</h2>
+                                <h2>Pages: ${book.pageCount}</h2>
+                                <button type="button">Status</button>
+                                <button type="button">Remove</button>
+                                </div>`;
+        container.appendChild(bookCard)             
     });
-
 }
 
