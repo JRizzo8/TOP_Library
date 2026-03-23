@@ -8,10 +8,30 @@
     <title>TOP Library</title>
 </head>
 <body>
-    <book-shelf id="bookShelf">
+    <main-grid>
+        <header-section>
+            <h2>Welcome to my</h2>
+            <h1>Book Shelf</h1>
+            <button type="button" class="addBtn" id="addBtn">Add a book for me to read</button>
+        </header-section>
+        <book-shelf id="bookShelf">
 
-    </book-shelf>
-    
+        </book-shelf>
+    </main-grid>
+    <dialog>
+        <button id="clsDialogBtn" autofocus>Close</button>
+        <form>
+            <label for="bkTitle">Book Title</label><br>
+            <input type="text" id="bkTitle" name="bkTitle"><br>
+            <label for="bkAuthor">Author</label><br>
+            <input type="text" id="bkAuthor" name="bkAuthor"><br>
+            <label for="pgCount">Page Count</label><br>
+            <input type="text" id="pgCount" name="pgCount"><br>
+            <label for="bkCover">Book Cover Image URL</label><br>
+            <input type="text" id="bkCover" name="bkCover"><br>
+            <input type="submit" id="submitBook" value="Add a book">
+        </form>
+    </dialog>
     
 
     <script src="script.js"></script>

@@ -1,0 +1,71 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+main-grid{
+    /* setup grid for header and main content */
+    display: grid;
+    grid-template-rows: 15% auto;
+    height: 100vh;
+}
+/* header styles */
+header-section{
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+header-section h2{
+    font-size: 18px;
+}
+header-section h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.addBtn{
+    border-radius: 20px;
+    height: 25px;
+    margin-top: 5px;
+    background-color: navy;
+    color: white;
+}
+.addBtn:active {
+    background-color: white;
+    color :black;
+}
+/*main styles */
+book-shelf{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: grey;
+}
+.book-card{
+    background-color: teal;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: fit-content;
+    min-width: 150px;
+}
+card-btns{
+    padding-top: 5px;
+}
+.cardBtn{
+    border-radius: 20px;
+    font-weight: 550;
+}
+.bookCover{
+    height: 80px;
+}
+#Read{
+    color: green;
+}
+#Unread{
+    color: red;
+}
+
