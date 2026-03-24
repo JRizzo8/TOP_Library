@@ -45,6 +45,8 @@ book-shelf{
     gap: 20px;
     background-color: grey;
 }
+
+/*book card styles */
 .book-card{
     background-color: teal;
     display: flex; 
@@ -65,11 +67,11 @@ card-btns{
     height: 80px;
 }
 #Read{
-    color: darkgreen;
+    color: ;
     background-color: lightgreen;
 }
 #Unread{
-    color: darkred;
-    background-color: pink;
+    color: maroon;
+    background-color: peachpuff;
 }
 
