@@ -67,11 +67,13 @@ card-btns{
     height: 80px;
 }
 #Read{
-    color: ;
+    color: darkgreen;
     background-color: lightgreen;
+    font-weight: bold;
 }
 #Unread{
     color: maroon;
     background-color: peachpuff;
+    font-weight: bold;
 }
 
