@@ -44,10 +44,11 @@ book-shelf{
     justify-content: space-evenly;
     gap: 20px;
     background-color: #e5e5e5;
+    overflow-y: scroll;
 }
 
 /*book card styles */
-.book-card{
+.bookCard{
     background-color: #7dc7c9;
     display: flex; 
     flex-direction: column;
@@ -79,4 +80,52 @@ card-btns{
 #rmvBtn{
     background-color: #c0f9ff;
     color: #000a68;
+}
+
+/* dialog styles */
+dialog[open]{
+    background-color: #002c44;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+::backdrop{
+    background-image: linear-gradient(
+        45deg,
+        magenta,
+        rebeccapurple,
+        dodgerblue,
+        green
+    );
+    opacity: 0.75;
+}
+#clsDialogBtn{
+    border-radius: 50px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    background-color: darkred;
+    color: pink;
+}
+#submitBook{
+    margin-top: 10px;
+    background-color: darkgreen;
+    color: lightgreen;
+    border-radius: 50px;
+    margin-left: 60px;
+}
+input[type=text]{
+    border-radius: 50px;
+}
+label{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+    border: 2px solid yellow;
 }
